@@ -4,7 +4,7 @@
   "terminals": [
     {
       "name": "kpi-flask-server",
-      "command": "source .venv/bin/activate && cd intermediate-bootcamp/materials/5-kpis-and-experimentation/src && flask --app server run --host 0.0.0.0 --port 5000"
+      "command": "source .venv/bin/activate && cd intermediate-bootcamp/materials/5-kpis-and-experimentation/src && STATSIG_API_KEY=\"${STATSIG_API_KEY:-secret-local-dev-placeholder}\" flask --app server run --host 0.0.0.0 --port 5000"
     }
   ],
   "ports": [
