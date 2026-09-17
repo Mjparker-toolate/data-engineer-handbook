@@ -1,0 +1,13 @@
+{
+  "name": "DataExpert bootcamp",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "kpi-flask-server",
+      "command": "source .venv/bin/activate && cd intermediate-bootcamp/materials/5-kpis-and-experimentation/src && flask --app server run --host 0.0.0.0 --port 5000"
+    }
+  ],
+  "ports": [
+    5000
+  ]
+}
